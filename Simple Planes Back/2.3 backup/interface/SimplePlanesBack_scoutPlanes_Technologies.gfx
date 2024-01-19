@@ -1,0 +1,111 @@
+spriteTypes = {
+	
+	#only gfx for nations that are in technologies.gfx
+	SpriteType = {
+		name = "GFX_ENG_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CAN_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CAN_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_AST_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_AST_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NZL_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NZL_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SAF_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_RAJ_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/ger_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/ger_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/ita_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ITA_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/ita_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/fra_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/fra_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/jap_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/jap_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/sov_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/sov_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/usa_scout_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/usa_scout_plane_2.dds"
+	}
+}

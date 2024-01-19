@@ -1,0 +1,176 @@
+spriteTypes = {
+	#spr
+	
+	SpriteType = {
+		name = "GFX_SPR_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_tac_bomber_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_tac_bomber_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_tac_bomber_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_tac_bomber_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SPR_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_strategic_bomber_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_strategic_bomber_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_strategic_bomber_equipment_3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SPR_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_fighter_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_fighter_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_fighter_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/spr_fighter_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SPR_CAS1x_medium"
+		texturefile = "gfx/interface/technologies/spr_cas1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_CAS2x_medium"
+		texturefile = "gfx/interface/technologies/spr_cas2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_CAS3x_medium"
+		texturefile = "gfx/interface/technologies/spr_cas3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SPR_heavy_fighter1x_medium"
+		texturefile = "gfx/interface/technologies/spr_heavy_fighter_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_heavy_fighter2x_medium"
+		texturefile = "gfx/interface/technologies/spr_heavy_fighter_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_heavy_fighter3x_medium"
+		texturefile = "gfx/interface/technologies/spr_heavy_fighter_equipment_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SPR_naval_bomber1x_medium"
+		texturefile = "gfx/interface/technologies/spr_nav_bomber_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_naval_bomber2x_medium"
+		texturefile = "gfx/interface/technologies/spr_nav_bomber_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_naval_bomber3x_medium"
+		texturefile = "gfx/interface/technologies/spr_nav_bomber_equipment_3.dds"
+	}
+
+	#por
+	SpriteType = {
+		name = "GFX_POR_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_early_fighter.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_fighter3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POR_CAS1x_medium"
+		texturefile = "gfx/interface/technologies/por_cas1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_CAS2x_medium"
+		texturefile = "gfx/interface/technologies/por_cas2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_CAS3x_medium"
+		texturefile = "gfx/interface/technologies/por_cas3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POR_naval_bomber1x_medium"
+		texturefile = "gfx/interface/technologies/por_naval_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_naval_bomber2x_medium"
+		texturefile = "gfx/interface/technologies/por_naval_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_naval_bomber3x_medium"
+		texturefile = "gfx/interface/technologies/por_naval_bomber3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POR_heavy_fighter1x_medium"
+		texturefile = "gfx/interface/technologies/por_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_heavy_fighter2x_medium"
+		texturefile = "gfx/interface/technologies/por_heavy_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_heavy_fighter3x_medium"
+		texturefile = "gfx/interface/technologies/por_heavy_fighter3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POR_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_early_bomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_tactical_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_tactical_bomber3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POR_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_strategic_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_strategic_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/por_strategic_bomber3.dds"
+	}
+}

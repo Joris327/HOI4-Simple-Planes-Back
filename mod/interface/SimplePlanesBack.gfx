@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_spb_airframe_icon"
+		texturefile = "gfx/interface/modifiers/MODIFIER_ARMY_BONUS_AIR_SUPERIORITY_FACTOR.dds"
+	}
+}

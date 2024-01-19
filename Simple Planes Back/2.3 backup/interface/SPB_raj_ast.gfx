@@ -1,0 +1,29 @@
+spriteTypes = {
+	
+	#contains only gfx specific to that country. commonwealth gfx is in Technologies.gxf
+	
+	#raj
+	SpriteType = {
+		name = "GFX_RAJ_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/RAJ_fighter1.dds"
+	}
+	
+	#ast
+	SpriteType = {
+		name = "GFX_AST_CAS2x_medium"
+		texturefile = "gfx/interface/technologies/AST_CAS2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_AST_CAS3x_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_AST_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/AST_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_AST_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/AST_fighter3.dds"
+	}	
+}

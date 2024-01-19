@@ -1,0 +1,419 @@
+spriteTypes = {
+
+	# all entries were modified
+	#hun, rom, yug, pol
+	
+	SpriteType = {
+		name = "GFX_GER_cv_fighter1x_medium"
+		texturefile = "gfx/interface/technologies/ger_cv_fighter_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_cv_fighter3x_medium"
+		texturefile = "gfx/interface/technologies/ger_cv_fighter_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_cv_naval_bomber1x_medium"
+		texturefile = "gfx/interface/technologies/ger_cv_naval_bomber_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_early_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_heavy_fighter1x_medium"
+		texturefile = "gfx/interface/technologies/hun_heavy_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_heavy_fighter2x_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_heavy_fighter3x_medium"
+		texturefile = "gfx/interface/technologies/hun_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_CAS1x_medium"
+		texturefile = "gfx/interface/technologies/hun_cas1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_CAS2x_medium"
+		texturefile = "gfx/interface/technologies/hun_cas2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_CAS3x_medium"
+		texturefile = "gfx/interface/technologies/hun_cas3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_tactical_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_tactical_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_strategic_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/hun_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber1x_medium"
+		texturefile = "gfx/interface/technologies/hun_naval_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber2x_medium"
+		texturefile = "gfx/interface/technologies/hun_naval_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber3x_medium"
+		texturefile = "gfx/interface/technologies/hun_naval_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_early_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_heavy_fighter1x_medium"
+		texturefile = "gfx/interface/technologies/rom_heavy_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_heavy_fighter2x_medium"
+		texturefile = "gfx/interface/technologies/rom_heavy_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_heavy_fighter3x_medium"
+		texturefile = "gfx/interface/technologies/rom_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_CAS1x_medium"
+		texturefile = "gfx/interface/technologies/rom_cas1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_CAS2x_medium"
+		texturefile = "gfx/interface/technologies/rom_cas2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_CAS3x_medium"
+		texturefile = "gfx/interface/technologies/rom_cas3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_tactical_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_tactical_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_strategic_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/rom_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_naval_bomber1x_medium"
+		texturefile = "gfx/interface/technologies/rom_naval_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_naval_bomber2x_medium"
+		texturefile = "gfx/interface/technologies/rom_naval_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_naval_bomber3x_medium"
+		texturefile = "gfx/interface/technologies/rom_naval_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_early_bomber.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_YUG_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_heavy_fighter1x_medium"
+		texturefile = "gfx/interface/technologies/yug_heavy_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_heavy_fighter2x_medium"
+		texturefile = "gfx/interface/technologies/yug_heavy_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_heavy_fighter3x_medium"
+		texturefile = "gfx/interface/technologies/yug_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_CAS1x_medium"
+		texturefile = "gfx/interface/technologies/yug_cas1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_CAS2x_medium"
+		texturefile = "gfx/interface/technologies/yug_cas2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_CAS3x_medium"
+		texturefile = "gfx/interface/technologies/yug_cas3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_tactical_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_tactical_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_strategic_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/yug_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_naval_bomber1x_medium"
+		texturefile = "gfx/interface/technologies/yug_naval_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_naval_bomber2x_medium"
+		texturefile = "gfx/interface/technologies/yug_naval_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_naval_bomber3x_medium"
+		texturefile = "gfx/interface/technologies/yug_naval_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_CAS1x_medium"
+		texturefile = "gfx/interface/technologies/POL_CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_CAS2x_medium"
+		texturefile = "gfx/interface/technologies/POL_CAS2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_CAS3x_medium"
+		texturefile = "gfx/interface/technologies/POL_CAS3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_early_bomber.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_early_fighter.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_heavy_fighter1x_medium"
+		texturefile = "gfx/interface/technologies/POL_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_heavy_fighter2x_medium"
+		texturefile = "gfx/interface/technologies/POL_heavy_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_heavy_fighter3x_medium"
+		texturefile = "gfx/interface/technologies/POL_heavy_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_naval_bomber1x_medium"
+		texturefile = "gfx/interface/technologies/POL_naval_bomber1.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_POL_naval_bomber2x_medium"
+		texturefile = "gfx/interface/technologies/POL_naval_bomber2.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_POL_naval_bomber3x_medium"
+		texturefile = "gfx/interface/technologies/POL_naval_bomber3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_strategic_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_POL_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_tactical_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_tactical_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/POL_tactical_bomber3.dds"
+	}	
+
+}

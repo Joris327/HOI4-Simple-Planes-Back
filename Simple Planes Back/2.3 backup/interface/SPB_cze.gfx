@@ -1,0 +1,87 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_CZE_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_early_fighter.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CZE_heavy_fighter1x_medium"
+		texturefile = "gfx/interface/technologies/cze_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_heavy_fighter2x_medium"
+		texturefile = "gfx/interface/technologies/cze_heavy_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_heavy_fighter3x_medium"
+		texturefile = "gfx/interface/technologies/cze_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CZE_CAS1x_medium"
+		texturefile = "gfx/interface/technologies/cze_cas1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_CAS2x_medium"
+		texturefile = "gfx/interface/technologies/cze_cas2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_CAS3x_medium"
+		texturefile = "gfx/interface/technologies/cze_cas3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CZE_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_early_bomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_tactical_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CZE_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_strategic_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_strategic_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/cze_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CZE_naval_bomber1x_medium"
+		texturefile = "gfx/interface/technologies/cze_naval_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_naval_bomber2x_medium"
+		texturefile = "gfx/interface/technologies/cze_naval_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_naval_bomber3x_medium"
+		texturefile = "gfx/interface/technologies/cze_naval_bomber3.dds"
+	}
+}

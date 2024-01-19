@@ -1,0 +1,86 @@
+spriteTypes = {
+	
+	#note that only the new technologies are here. changes for existing techs are in Technologies.gfx
+	
+	#small
+	
+	SpriteType = {
+		name = "GFX_jet_fighter2x_medium"
+		texturefile = "gfx/interface/technologies/jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CAS1x_medium"
+		texturefile = "gfx/interface/technologies/light_plane_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_CAS2x_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CAS3x_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_plane_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_naval_bomber1x_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_plane_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_naval_bomber2x_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_plane_3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_naval_bomber3x_medium"
+		texturefile = "gfx/interface/technologies/light_plane_6.dds"
+	}
+	
+	# medium
+	
+	SpriteType = {
+		name = "GFX_heavy_fighter1x_medium"
+		texturefile = "gfx/interface/technologies/FRA_medium_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_fighter2x_medium"
+		texturefile = "gfx/interface/technologies/FRA_light_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_fighter3x_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_plane_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_jet_tactical_bomber2x_medium"
+		texturefile = "gfx/interface/technologies/jet_tactical_bomber2.dds"
+	}
+	
+	#other
+
+	spriteType = {
+		name = "GFX_suicide_bomberx_medium"
+		textureFile = "gfx/interface/technologies/jap_suicide_craft_medium.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_scout_plane1x_medium"
+		texturefile = "gfx/interface/technologies/generic_scout_plane_1.dds"
+	}		
+	SpriteType = {
+		name = "GFX_scout_plane2x_medium"
+		texturefile = "gfx/interface/technologies/generic_scout_plane_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_basic_rocket_interceptorx_medium"
+		texturefile = "gfx/interface/technologies/rocket_interceptor_1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_improved_rocket_interceptorx_medium"
+		texturefile = "gfx/interface/technologies/rocket_interceptor_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_rocket_interceptorx_medium"
+		texturefile = "gfx/interface/technologies/rocket_interceptor_3.dds"
+	}
+}

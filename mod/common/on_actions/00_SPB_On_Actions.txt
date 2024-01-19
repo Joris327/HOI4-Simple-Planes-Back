@@ -1,0 +1,264 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				##starting techs
+				#fighters
+				if = {
+					limit = {
+						has_tech = iw_small_airframe
+					}
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = basic_small_airframe
+					}
+					set_technology = {
+						popup = no
+						fighter1 = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = improved_small_airframe
+					}
+					set_technology = {
+						popup = no
+						fighter2 = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = advanced_small_airframe
+					}
+					set_technology = {
+						popup = no
+						fighter3 = 1
+					}
+				}
+				
+				#CAS
+				if = {
+					limit = {
+						has_tech = early_bombs
+					}
+					set_technology = {
+						popup = no
+						CAS1 = 1
+					}
+				}
+				
+				#naval bombers
+				if = {
+					limit = {
+						has_tech = air_torpedoe_1
+					}
+					set_technology = {
+						popup = no
+						naval_bomber1 = 1
+					}
+				}
+				
+				#carrier
+				if = {
+					limit = {
+						has_navy_size = {
+							size > 0
+							archetype = ship_hull_carrier
+						}
+					}
+					set_technology = {
+						popup = no
+						naval_bomber1 = 1
+						cv_naval_bomber1 = 1
+						early_fighter = 1
+						cv_early_fighter = 1
+					}
+				}
+				
+				#medium bombers
+				if = {
+					limit = {
+						has_tech = iw_medium_airframe
+					}
+					set_technology = {
+						popup = no
+						early_bomber = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = basic_medium_airframe
+					}
+					set_technology = {
+						popup = no
+						tactical_bomber1 = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = improved_medium_airframe
+					}
+					set_technology = {
+						popup = no
+						tactical_bomber2 = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = advanced_medium_airframe
+					}
+					set_technology = {
+						popup = no
+						tactical_bomber3 = 1
+					}
+				}
+				
+				#scout planes
+				if = {
+					limit = {
+						has_tech = photo_reconnaisance
+					}
+					set_technology = {
+						popup = no
+						scout_plane1 = 1
+					}
+				}
+				
+				#heavy bombers
+				if = {
+					limit = {
+						has_tech = iw_large_airframe
+					}
+					set_technology = {
+						popup = no
+						strategic_bomber1 = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = basic_large_airframe
+					}
+					set_technology = {
+						popup = no
+						strategic_bomber1 = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = improved_large_airframe
+					}
+					set_technology = {
+						popup = no
+						strategic_bomber2 = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = advanced_large_airframe
+					}
+					set_technology = {
+						popup = no
+						strategic_bomber3 = 1
+					}
+				}
+			}
+			
+			#equipment variants
+			GER = {
+				create_equipment_variant = {
+					name = "Ju 86"
+					type = tac_bomber_equipment_0
+					upgrades = {
+						plane_tac_bomb_upgrade = 5
+						plane_range_upgrade = 5
+						plane_engine_upgrade = 5
+						plane_reliability_upgrade = 5
+					}
+					obsolete = yes
+				}
+				create_equipment_variant = {
+					name = "Do 17"
+					type = tac_bomber_equipment_0
+					upgrades = {
+						plane_tac_bomb_upgrade = 5
+						plane_range_upgrade = 1
+						plane_engine_upgrade = 1
+						plane_reliability_upgrade = 5
+					}
+					obsolete = yes
+				}
+				
+				if = {
+					limit = {
+						has_start_date > 1939.1.1
+					}
+					create_equipment_variant = {
+						name = "He 112"
+						type = fighter_equipment_1
+						upgrades = {
+							plane_gun_upgrade = 1
+							plane_range_upgrade = 1  
+							plane_engine_upgrade = 0
+							plane_reliability_upgrade = 2
+						}
+					}
+					create_equipment_variant = {
+						name = "Bf 109 E"
+						type = fighter_equipment_1
+						upgrades = {
+							plane_gun_upgrade = 2
+							plane_range_upgrade = 1  
+							plane_engine_upgrade = 2
+							plane_reliability_upgrade = 4
+						}
+					}
+				}
+			}
+			ITA = {
+				create_equipment_variant = {
+					name = "CR.42"
+					type = fighter_equipment_0
+					upgrades = {
+						plane_gun_upgrade = 1
+						plane_range_upgrade = 0  
+						plane_engine_upgrade = 2
+						plane_reliability_upgrade = 1
+					}
+				}
+			}
+			USA = {
+				if = {
+					limit = {
+						has_start_date > 1939.01.01
+					}
+					create_equipment_variant = {
+						name = "F2A Buffalo"
+						type = cv_fighter_equipment_1
+						upgrades = {
+							cv_plane_gun_upgrade = 5
+							cv_plane_range_upgrade = 0
+							plane_engine_upgrade = 2
+							plane_reliability_upgrade = 5
+						}
+					}
+					create_equipment_variant = {
+						name = "Martin M166"
+						type = tac_bomber_equipment_0
+						upgrades = {
+							plane_tac_bomb_upgrade = 2
+							plane_range_upgrade = 1
+							plane_engine_upgrade = 2
+							plane_reliability_upgrade = 3
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}

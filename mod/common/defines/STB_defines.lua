@@ -1,0 +1,1 @@
+NDefines.NTechnology.MAX_SUBTECHS = 5 --was 3	-- Max number of sub technologies a technology can have.

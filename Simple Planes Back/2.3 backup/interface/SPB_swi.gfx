@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_SWI_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/swi_light_plane_2.dds"
+	}
+}
