@@ -33,7 +33,7 @@ technologies = {
 			mio_cat_all_light_fighter_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+        
 		sub_technologies = {
 			cv_early_fighter
             iw_small_airframe

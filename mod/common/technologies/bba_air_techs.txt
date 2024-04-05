@@ -1,10 +1,10 @@
 
 #edits: 
-# all non-airframe techs have been move 15 point to the right (+x axis). ai_will_do set to 0.
+# all non-airframe techs have been move 15 point to the right (+x axis).
 # airframe techs:
 # - research cost set to 0
 # - removed from bba folder
-# - ai_will_do set to 0
+# - ai_will_do set to 100
 # - removed all research categories except mio to prevent waste of research bonusses
 
 technologies = {
