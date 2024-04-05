@@ -63,8 +63,11 @@ generic_fighter = {
 				plane_range_upgrade = {
 					base = 0
 					modifier = { #russia big
-						tag = sov
-						factor = 2
+						OR = {
+							tag = SOV
+							tag = GER
+						}
+						factor = 1
 					}
 				}
 				plane_engine_upgrade = 1
@@ -73,7 +76,7 @@ generic_fighter = {
 		}
 	}
 	
-	basic_fighter_very_improved = {
+	basic_fighter_majorly_improved = {
 		priority = {
 			factor = 100
 			modifier = { 
@@ -91,12 +94,16 @@ generic_fighter = {
 			type = fighter_equipment_1
 			
 			upgrades = {
-				plane_gun_upgrade = 3
+				plane_gun_upgrade = 2
 				plane_range_upgrade = {
-					base = 2
+					base = 0
 					modifier = { #russia big
-						tag = sov
-						factor = 3
+						tag = SOV
+						factor = 2
+					}
+					modifier = {
+						tag = GER
+						factor = 1
 					}
 				}
 				plane_engine_upgrade = 3
@@ -138,7 +145,10 @@ generic_fighter = {
 				plane_range_upgrade = {
 					base = 0
 					modifier = {
-						tag = sov
+						OR = {
+							tag = SOV
+							tag = GER
+						}
 						factor = 2
 					}
 				}
@@ -148,7 +158,7 @@ generic_fighter = {
 		}
 	}
 	
-	improved_fighter_very_improved = {
+	improved_fighter_majorly_improved = {
 		priority = {
 			factor = 10
 			modifier = { 
@@ -166,12 +176,16 @@ generic_fighter = {
 			type = fighter_equipment_2
 			
 			upgrades = {
-				plane_gun_upgrade = 3
+				plane_gun_upgrade = 2
 				plane_range_upgrade = {
-					base = 2
+					base = 0
 					modifier = {
-						tag = sov
-						factor = 3
+						tag = SOV
+						factor = 2
+					}
+					modifier = {
+						tag = GER
+						factor = 1
 					}
 				}
 				plane_engine_upgrade = 3
@@ -205,8 +219,11 @@ generic_fighter = {
 				plane_range_upgrade = {
 					base = 0
 					modifier = {
-						tag = sov
-						factor = 2
+						OR = {
+							tag = SOV
+							tag = GER
+						}
+						factor = 1
 					}
 				}
 				plane_engine_upgrade = 1
@@ -245,13 +262,7 @@ generic_fighter = {
 			
 			upgrades = {
 				plane_gun_upgrade = 1
-				plane_range_upgrade = {
-					base = 0
-					modifier = {
-						tag = sov
-						factor = 2
-					}
-				}
+				plane_range_upgrade = 0
 				plane_engine_upgrade = 1
 				plane_reliability_upgrade = 1
 			}
@@ -280,13 +291,7 @@ generic_fighter = {
 			
 			upgrades = {
 				plane_gun_upgrade = 1
-				plane_range_upgrade = {
-					base = 0
-					modifier = {
-						tag = sov
-						factor = 2
-					}
-				}
+				plane_range_upgrade = 0
 				plane_engine_upgrade = 1
 				plane_reliability_upgrade = 1
 			}
@@ -297,7 +302,7 @@ generic_fighter = {
 generic_cas = {
 	category = air
 
-	blocked_for = {GER ENG USA}
+	#blocked_for = {GER ENG USA}
 
 	available_for = {}
 
@@ -308,30 +313,82 @@ generic_cas = {
 	priority = {
 		factor = 100
 	}
+	
 	cas_1 = {
 		priority = {
 			factor = 100	
+			modifier = { 
+				has_tech = CAS2
+				factor = 0 #let's not waste XP here
+			}
 		}
 		target_variant = {
 			match_value = 1000
-			type = small_plane_cas_airframe_1
-			modules = {
-				fixed_main_weapon_slot = bomb_locks
-				fixed_auxiliary_weapon_slot_1 = empty
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = fuel_tanks_small	
-			}
-			
-		}
-
-		allowed_modules = {
-			bomb_locks
-			engine_2_1x
-			armor_plate_small
-			fuel_tanks_small
+			type = CAS_equipment_1
 		}
 	}
+	
+	cas_1_improved = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = CAS2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1000
+			type = CAS_equipment_1
+			
+			upgrades = {
+				plane_cas_upgrade = 1
+				plane_range_upgrade = {
+					base = 0
+					modifier = {
+						OR = {
+							tag = SOV
+							tag = GER
+						}
+						factor = 1
+					}
+				}
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	
+	cas_1_majorly_improved = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = CAS2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1000
+			type = CAS_equipment_1
+			
+			upgrades = {
+				plane_cas_upgrade = 2
+				plane_range_upgrade = {
+					base = 0
+					modifier = { #russia big
+						tag = SOV
+						factor = 2
+					}
+					modifier = {
+						tag = GER
+						factor = 1
+					}
+				}
+				plane_engine_upgrade = 3
+				plane_reliability_upgrade = 3
+			}
+		}
+	}
+	
 	cas_2 = {
 		priority = {
 			factor = 200
