@@ -40,7 +40,7 @@ technologies = {
 
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
         }
 	}
 	
@@ -75,7 +75,7 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -112,7 +112,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -145,7 +145,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -179,7 +179,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -205,7 +205,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -231,7 +231,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -257,7 +257,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -283,7 +283,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -308,7 +308,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 
@@ -333,7 +333,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -357,7 +357,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -382,7 +382,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -407,7 +407,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	
@@ -431,7 +431,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 
@@ -472,7 +472,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
 		}
 	}
 
@@ -499,7 +507,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
 		}
 	}
 
@@ -527,7 +543,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
 		}
 	}
 
@@ -553,7 +577,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = basic_medium_airframe
+				}
+				factor = 3
+			}
 		}
 	}
 
@@ -586,7 +616,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 2
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
 		}
 	}
 
@@ -619,7 +657,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
 		}
 	}
 
@@ -647,7 +693,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
 		}
 	}
 
@@ -694,7 +748,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
 		}
 	}
 
@@ -727,7 +789,23 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+			modifier = {
+				has_War = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -759,7 +837,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = basic_small_airframe
+					has_tech = basic_medium_airframe
+					has_tech = basic_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = USA
+					tag = GER
+				}
+				factor = 3
+			}
 		}
 	}
 
@@ -798,7 +891,23 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = basic_small_airframe
+					has_tech = basic_medium_airframe
+					has_tech = basic_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
 		}
 	}
 
@@ -830,7 +939,23 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
 		}
 	}
 
@@ -862,7 +987,23 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
 		}
 	}
 
@@ -912,7 +1053,35 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
 		}
 	}
 
@@ -952,7 +1121,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
 		}
 	}
 
@@ -992,7 +1181,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 5
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1941.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1942.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1943.1.1"
+				factor = 3
+			}
 		}
 	}
 
@@ -1027,7 +1236,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1943.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1944.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1945.1.1"
+				factor = 3
+			}
 		}
 	}
 
@@ -1060,7 +1289,34 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
 		}
 	}
 
@@ -1096,7 +1352,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5
 		}
 	}
 
