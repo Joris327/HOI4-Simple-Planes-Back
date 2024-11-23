@@ -1,4 +1,3 @@
-# AI plane design for testing
 
 generic_fighter = {
 	category = air
@@ -13,6 +12,12 @@ generic_fighter = {
 
 	priority = {
 		factor = 1000
+		
+		modifier = {
+			tag = USA
+			has_War = yes
+			factor = 2
+		}
 	}
 
 	great_war_fighter_default = {
@@ -23,7 +28,6 @@ generic_fighter = {
 				factor = 0 #let's not waste XP here
 			}
 		}
-
 		target_variant = {
 			match_value = 1000
 			type = fighter_equipment_0
@@ -38,13 +42,11 @@ generic_fighter = {
 				factor = 0 #let's not waste XP here
 			}
 		}
-
 		target_variant = {
-			match_value = 1000
+			match_value = 1500
 			type = fighter_equipment_1
 		}
 	}
-	
 	basic_fighter_improved = {
 		priority = {
 			factor = 100
@@ -53,11 +55,9 @@ generic_fighter = {
 				factor = 0 #let's not waste XP here
 			}
 		}
-
 		target_variant = {
-			match_value = 1250
+			match_value = 1600
 			type = fighter_equipment_1
-			
 			upgrades = {
 				plane_gun_upgrade = 1
 				plane_range_upgrade = {
@@ -75,24 +75,20 @@ generic_fighter = {
 			}
 		}
 	}
-	
 	basic_fighter_majorly_improved = {
+		enable = {
+			is_major = yes
+		}
 		priority = {
 			factor = 100
-			modifier = { 
-				is_major = no
-				factor = 0
-			}
 			modifier = { 
 				has_tech = fighter2
 				factor = 0 #let's not waste XP here
 			}
 		}
-
 		target_variant = {
-			match_value = 1500
+			match_value = 1700
 			type = fighter_equipment_1
-			
 			upgrades = {
 				plane_gun_upgrade = 2
 				plane_range_upgrade = {
@@ -120,13 +116,11 @@ generic_fighter = {
 				factor = 0 #let's not waste XP here
 			}
 		}
-
 		target_variant = {
-			match_value = 1000
+			match_value = 2000
 			type = fighter_equipment_2
 		}
 	}
-
 	improved_fighter_improved = {
 		priority = {
 			factor = 10
@@ -135,11 +129,9 @@ generic_fighter = {
 				factor = 0 #let's not waste XP here
 			}
 		}
-
 		target_variant = {
-			match_value = 1250
+			match_value = 2100
 			type = fighter_equipment_2
-			
 			upgrades = {
 				plane_gun_upgrade = 1
 				plane_range_upgrade = {
@@ -149,7 +141,7 @@ generic_fighter = {
 							tag = SOV
 							tag = GER
 						}
-						factor = 2
+						factor = 1
 					}
 				}
 				plane_engine_upgrade = 1
@@ -157,24 +149,20 @@ generic_fighter = {
 			}
 		}
 	}
-	
 	improved_fighter_majorly_improved = {
+		enable = {
+			is_major = yes
+		}
 		priority = {
 			factor = 10
-			modifier = { 
-				is_major = no
-				factor = 0
-			}
 			modifier = { 
 				has_tech = fighter3 
 				factor = 0 #let's not waste XP here
 			}
 		}
-
 		target_variant = {
-			match_value = 1500
+			match_value = 2200
 			type = fighter_equipment_2
-			
 			upgrades = {
 				plane_gun_upgrade = 2
 				plane_range_upgrade = {
@@ -198,22 +186,18 @@ generic_fighter = {
 		priority = {
 			factor = 10
 		}
-
 		target_variant = {
-			match_value = 1000
+			match_value = 2500
 			type = fighter_equipment_3
 		}
 	}
-
 	advanced_fighter_improved = {
 		priority = {
 			factor = 10
 		}
-
 		target_variant = {
-			match_value = 1250
+			match_value = 2600
 			type = fighter_equipment_3
-			
 			upgrades = {
 				plane_gun_upgrade = 1
 				plane_range_upgrade = {
@@ -240,13 +224,11 @@ generic_fighter = {
 				factor = 0 #let's not waste XP here
 			}
 		}
-
 		target_variant = {
-			match_value = 2000
+			match_value = 3000
 			type = jet_fighter_equipment_1
 		}
 	}
-	
 	jet_fighter_improved = {
 		priority = {
 			factor = 10
@@ -255,11 +237,9 @@ generic_fighter = {
 				factor = 0 #let's not waste XP here
 			}
 		}
-
 		target_variant = {
-			match_value = 2250
+			match_value = 3100
 			type = jet_fighter_equipment_1
-			
 			upgrades = {
 				plane_gun_upgrade = 1
 				plane_range_upgrade = 0
@@ -273,27 +253,41 @@ generic_fighter = {
 		priority = {
 			factor = 10
 		}
-
 		target_variant = {
-			match_value = 2000
+			match_value = 3500
 			type = jet_fighter_equipment_2
 		}
 	}
-	
 	jet_fighter_2_improved = {
 		priority = {
 			factor = 10
 		}
-
 		target_variant = {
-			match_value = 2250
+			match_value = 3600
 			type = jet_fighter_equipment_2
-			
 			upgrades = {
 				plane_gun_upgrade = 1
 				plane_range_upgrade = 0
 				plane_engine_upgrade = 1
 				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	jet_fighter_2_majorly_improved = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 10
+		}
+		target_variant = {
+			match_value = 3600
+			type = jet_fighter_equipment_2
+			upgrades = {
+				plane_gun_upgrade = 2
+				plane_range_upgrade = 0
+				plane_engine_upgrade = 3
+				plane_reliability_upgrade = 3
 			}
 		}
 	}
@@ -317,6 +311,10 @@ generic_cas = {
 	cas_1 = {
 		priority = {
 			factor = 100
+			modifier = { 
+				has_tech = CAS2 
+				factor = 0 #let's not waste XP here
+			}
 		}
 		target_variant = {
 			match_value = 1000
@@ -326,28 +324,33 @@ generic_cas = {
 	cas_1_better = {
 		priority = {
 			factor = 100
+			modifier = { 
+				has_tech = CAS2 
+				factor = 0 #let's not waste XP here
+			}
 		}
 		target_variant = {
 			match_value = 1100
 			type = CAS_equipment_1
-			
 			upgrades = {
 				plane_reliability_upgrade = 1
 			}
 		}
 	}
 	cas_1_best = {
+		enable = {
+			is_major = yes
+		}
 		priority = {
 			factor = 100
-			modifier = {
-				is_major = no
-				factor = 0
+			modifier = { 
+				has_tech = CAS2 
+				factor = 0 #let's not waste XP here
 			}
 		}
 		target_variant = {
 			match_value = 1200
 			type = CAS_equipment_1
-			
 			upgrades = {
 				plane_cas_upgrade = 1
 				plane_range_upgrade = {
@@ -370,6 +373,10 @@ generic_cas = {
 	cas_2 = {
 		priority = {
 			factor = 200
+			modifier = { 
+				has_tech = CAS3
+				factor = 0 #let's not waste XP here
+			}
 		}
 		target_variant = {
 			match_value = 1500
@@ -379,28 +386,33 @@ generic_cas = {
 	cas_2_better = {
 		priority = {
 			factor = 200
+			modifier = { 
+				has_tech = CAS3
+				factor = 0 #let's not waste XP here
+			}
 		}
 		target_variant = {
 			match_value = 1600
 			type = CAS_equipment_2
-			
 			upgrades = {
 				plane_reliability_upgrade = 1
 			}
 		}
 	}
 	cas_2_best = {
+		enable = {
+			is_major = yes
+		}
 		priority = {
 			factor = 200
-			modifier = {
-				is_major = no
-				factor = 0
+			modifier = { 
+				has_tech = CAS3
+				factor = 0 #let's not waste XP here
 			}
 		}
 		target_variant = {
 			match_value = 1700
 			type = CAS_equipment_2
-			
 			upgrades = {
 				plane_cas_upgrade = 1
 				plane_range_upgrade = {
@@ -425,7 +437,7 @@ generic_cas = {
 			factor = 200
 		}
 		target_variant = {
-			match_value = 2500
+			match_value = 2000
 			type = CAS_equipment_3
 		}
 	}
@@ -434,26 +446,23 @@ generic_cas = {
 			factor = 200
 		}
 		target_variant = {
-			match_value = 2600
+			match_value = 2100
 			type = CAS_equipment_3
-			
 			upgrades = {
 				plane_reliability_upgrade = 1
 			}
 		}
 	}
 	cas_3_best = {
+		enable = {
+			is_major = yes
+		}
 		priority = {
 			factor = 200
-			modifier = {
-				is_major = no
-				factor = 0
-			}
 		}
 		target_variant = {
-			match_value = 2700
+			match_value = 2200
 			type = CAS_equipment_3
-			
 			upgrades = {
 				plane_cas_upgrade = 1
 				plane_range_upgrade = {
@@ -477,7 +486,7 @@ generic_cas = {
 generic_naval_bomber = {
 	category = air
 
-	blocked_for = {GER ENG USA}
+	#blocked_for = {GER ENG USA}
 
 	available_for = {}
 
@@ -485,12 +494,27 @@ generic_naval_bomber = {
 		air_naval_bomber
 	}
 	priority = {
-		factor = 500
+		#factor = 500
+		modifier = { #no need for naval bombers if you have no coast line 
+			any_owned_state = {
+				is_coastal = yes
+			}
+			factor = 500
+		}
+		
+		modifier = {
+			tag = GER
+			factor = 0.2
+		}
 	}
 	
 	naval_bomber_1 = {
 		priority = {
 			factor = 100
+			modifier = { 
+				has_tech = naval_bomber2
+				factor = 0 #let's not waste XP here
+			}
 		}
 		target_variant = {
 			match_value = 1000
@@ -500,28 +524,33 @@ generic_naval_bomber = {
 	naval_bomber_1_better = {
 		priority = {
 			factor = 100
+			modifier = { 
+				has_tech = naval_bomber2
+				factor = 0 #let's not waste XP here
+			}
 		}
 		target_variant = {
 			match_value = 1100
 			type = nav_bomber_equipment_1
-			
 			upgrades = {
 				plane_reliability_upgrade = 1
 			}
 		}
 	}
 	naval_bomber_1_best = {
+		enable = {
+			is_major = yes
+		}
 		priority = {
 			factor = 100
-			modifier = {
-				is_major = no
-				factor = 0
+			modifier = { 
+				has_tech = naval_bomber2
+				factor = 0 #let's not waste XP here
 			}
 		}
 		target_variant = {
 			match_value = 1200
 			type = nav_bomber_equipment_1
-			
 			upgrades = {
 				plane_naval_upgrade = 1
 				plane_range_upgrade = {
@@ -544,6 +573,10 @@ generic_naval_bomber = {
 	naval_bomber_2 = {
 		priority = {
 			factor = 200
+			modifier = { 
+				has_tech = naval_bomber3
+				factor = 0 #let's not waste XP here
+			}
 		}
 		target_variant = {
 			match_value = 1500
@@ -553,28 +586,33 @@ generic_naval_bomber = {
 	naval_bomber_2_better = {
 		priority = {
 			factor = 200
+			modifier = { 
+				has_tech = naval_bomber3
+				factor = 0 #let's not waste XP here
+			}
 		}
 		target_variant = {
 			match_value = 1600
 			type = nav_bomber_equipment_2
-			
 			upgrades = {
 				plane_reliability_upgrade = 1
 			}
 		}
 	}
 	naval_bomber_2_best = {
+		enable = {
+			is_major = yes
+		}
 		priority = {
 			factor = 200
-			modifier = {
-				is_major = no
-				factor = 0
+			modifier = { 
+				has_tech = naval_bomber3
+				factor = 0 #let's not waste XP here
 			}
 		}
 		target_variant = {
 			match_value = 1700
 			type = nav_bomber_equipment_2
-			
 			upgrades = {
 				plane_naval_upgrade = 1
 				plane_range_upgrade = {
@@ -597,6 +635,7 @@ generic_naval_bomber = {
 	naval_bomber_3 = {
 		priority = {
 			factor = 200
+			
 		}
 		target_variant = {
 			match_value = 2000
@@ -610,24 +649,21 @@ generic_naval_bomber = {
 		target_variant = {
 			match_value = 2100
 			type = nav_bomber_equipment_3
-			
 			upgrades = {
 				plane_reliability_upgrade = 1
 			}
 		}
 	}
 	naval_bomber_3_best = {
+		enable = {
+			is_major = yes
+		}
 		priority = {
 			factor = 200
-			modifier = {
-				is_major = no
-				factor = 0
-			}
 		}
 		target_variant = {
 			match_value = 2200
 			type = nav_bomber_equipment_3
-			
 			upgrades = {
 				plane_naval_upgrade = 1
 				plane_range_upgrade = {
@@ -652,7 +688,7 @@ generic_cv_fighter = {
 	category = air
 
 	#blocked_for = {  ENG USA FRA JAP } #Why
-	blocked_for = { ENG }
+	#blocked_for = { ENG }
 
 	available_for = {}
 
@@ -669,81 +705,130 @@ generic_cv_fighter = {
 			}
 			factor = 0
 		}
+		
+		modifier = {
+			tag = USA
+			has_war_with = JAP
+			factor = 2
+		}
 	}
 
 	great_war_cv_fighter_default = {
 		priority = {
 			factor = 1
 			modifier = { 
-				has_tech = basic_small_airframe
+				has_tech = cv_fighter1
 				factor = 0 #let's not waste XP here
 			}
 		}
 
 		target_variant = {
 			match_value = 1000
-			type = cv_small_plane_airframe_0
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = empty
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
-			}
-		}
-
-		allowed_modules = {
-			engine_1_1x
-			light_mg_4x
+			type = cv_fighter_equipment_0
 		}
 	}
 
 	basic_cv_fighter_default = {
 		priority = {
 			factor = 100
-		}
-
-		target_variant = {
-			match_value = 2000
-			type = cv_small_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
+			modifier = { 
+				has_tech = cv_fighter2
+				factor = 0 #let's not waste XP here
 			}
 		}
-
-		allowed_modules = {
-			light_mg_4x
-			aircraft_cannon_1_1x
-			engine_2_1x
-			armor_plate_small
+		target_variant = {
+			match_value = 1500
+			type = cv_fighter_equipment_1
+		}
+	}
+	basic_cv_fighter_better = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = cv_fighter2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1600
+			type = cv_fighter_equipment_1
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	basic_cv_fighter_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = cv_fighter2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 2200
+			type = cv_fighter_equipment_1
+			upgrades = {
+				cv_plane_gun_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 2
+			}
 		}
 	}
 
 	improved_cv_fighter_default = {
 		priority = {
 			factor = 10
-		}
-
-		target_variant = {
-			match_value = 3000
-			type = cv_small_plane_airframe_2
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				engine_type_slot = engine_3_1x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
+			modifier = { 
+				has_tech = cv_fighter3
+				factor = 0 #let's not waste XP here
 			}
 		}
-
-		allowed_modules = {
-			light_mg_4x
-			aircraft_cannon_1_2x
-			engine_3_1x
+		target_variant = {
+			match_value = 2500
+			type = cv_fighter_equipment_2
+		}
+	}
+	improved_cv_fighter_better = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = cv_fighter3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 2600
+			type = cv_fighter_equipment_2
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	improved_cv_fighter_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = cv_fighter3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 2700
+			type = cv_fighter_equipment_2
+			upgrades = {
+				cv_plane_gun_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 2
+			}
 		}
 	}
 
@@ -751,64 +836,83 @@ generic_cv_fighter = {
 		priority = {
 			factor = 10
 		}
-
 		target_variant = {
-			match_value = 4000
-			type = cv_small_plane_airframe_3
-			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-				engine_type_slot = engine_4_1x
-				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = empty	
-			}
-		}
-
-		allowed_modules = { 
-			aircraft_cannon_1_2x
-			heavy_mg_4x
-			engine_4_1x
-			armor_plate_small
+			match_value = 3000
+			type = cv_fighter_equipment_3
 		}
 	}
-	jet_cv_fighter_default = {
+	advanced_cv_fighter_better = {
 		priority = {
 			factor = 10
 		}
-
 		target_variant = {
-			match_value = 4000
-			type = cv_small_plane_airframe_4
-			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_2_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
-				engine_type_slot = jet_engine_2x
-				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = empty	
+			match_value = 3100
+			type = cv_fighter_equipment_3
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
 			}
 		}
-
-		allowed_modules = { 
-			aircraft_cannon_2_2x
-			aircraft_cannon_2_2x
-			jet_engine_2x
-			armor_plate_small
+	}
+	advanced_cv_fighter_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 10
+		}
+		target_variant = {
+			match_value = 3200
+			type = cv_fighter_equipment_3
+			upgrades = {
+				cv_plane_gun_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 2
+			}
 		}
 	}
+	
+	#no simple jet cv planes
+	
+	# jet_cv_fighter_default = {
+		# priority = {
+			# factor = 10
+		# }
+
+		# target_variant = {
+			# match_value = 4000
+			# type = cv_small_plane_airframe_4
+		# }
+	# }
+	
+	# jet_cv_fighter_better = {
+		# priority = {
+			# factor = 10
+		# }
+
+		# target_variant = {
+			# match_value = 4000
+			# type = cv_small_plane_airframe_4
+			
+			# upgrades = {
+				# plane_engine_upgrade = 1
+				# plane_reliability_upgrade = 1
+			# }
+		# }
+	# }
 }
 
 generic_cv_cas = {
 	category = air
 
 	#blocked_for = { ENG USA FRA JAP }
-	blocked_for = { ENG }
+	#blocked_for = { ENG }
 
 	available_for = {}
 
 	roles = {
 		air_cv_cas
 	}
-
 	priority = {
 		factor = 100
 		modifier = {
@@ -819,79 +923,145 @@ generic_cv_cas = {
 			factor = 0
 		}
 	}
+	
 	cv_cas_1 = {
 		priority = {
 			factor = 100
-			
+			modifier = { 
+				has_tech = cv_CAS2
+				factor = 0 #let's not waste XP here
+			}
 		}
-
 		target_variant = {
 			match_value = 1000
-			type = cv_small_plane_cas_airframe_1
-			modules = {
-				fixed_main_weapon_slot = bomb_locks
-				fixed_auxiliary_weapon_slot_1 = empty
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = dive_brakes_small
-				special_type_slot_2 = empty	
-			}
-			
-		}
-
-		allowed_modules = {
-			bomb_locks
-			engine_2_1x
-			dive_brakes_small
+			type = cv_CAS_equipment_1
 		}
 	}
+	cv_cas_1_better = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = cv_CAS2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1100
+			type = cv_CAS_equipment_1
+			upgrades = {
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	cv_cas_1_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = cv_CAS2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1200
+			type = cv_CAS_equipment_1
+			upgrades = {
+				plane_cas_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 2
+			}
+		}
+	}
+	
 	cv_cas_2 = {
 		priority = {
 			factor = 200
-			
-		}
-
-		target_variant = {
-			match_value = 1500
-			type = cv_small_plane_cas_airframe_2
-			modules = {
-				fixed_main_weapon_slot = small_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = bomb_locks
-				engine_type_slot = engine_2_2x
-				special_type_slot_1 = dive_brakes_small
-				special_type_slot_2 = empty	
+			modifier = { 
+				has_tech = cv_CAS3
+				factor = 0 #let's not waste XP here
 			}
 		}
-
-		allowed_modules = {
-			small_bomb_bay
-			bomb_locks
-			engine_2_2x
-			dive_brakes_small
+		target_variant = {
+			match_value = 1500
+			type = cv_CAS_equipment_2
 		}
 	}
+	cv_cas_2_better = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = cv_CAS3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1600
+			type = cv_CAS_equipment_2
+			upgrades = {
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	cv_cas_2_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = cv_CAS3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1700
+			type = cv_CAS_equipment_2
+			upgrades = {
+				plane_cas_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 2
+			}
+		}
+	}
+	
 	cv_cas_3 = {
 		priority = {
 			factor = 200
-			
 		}
-
 		target_variant = {
-			match_value = 2500
-			type = cv_small_plane_cas_airframe_3
-			modules = {
-				fixed_main_weapon_slot = bomb_locks
-				fixed_auxiliary_weapon_slot_1 = bomb_locks
-				engine_type_slot = engine_3_1x
-				special_type_slot_1 = dive_brakes_small
-				special_type_slot_2 = empty	
+			match_value = 2000
+			type = cv_CAS_equipment_3
+		}
+	}
+	cv_cas_3_better = {
+		priority = {
+			factor = 200
+		}
+		target_variant = {
+			match_value = 2100
+			type = cv_CAS_equipment_3
+			upgrades = {
+				plane_reliability_upgrade = 1
 			}
 		}
-
-		allowed_modules = {
-			small_bomb_bay
-			bomb_locks
-			engine_3_1x
-			dive_brakes_small
+	}
+	cv_cas_3_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 200
+		}
+		target_variant = {
+			match_value = 2200
+			type = cv_CAS_equipment_3
+			upgrades = {
+				plane_cas_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 2
+			}
 		}
 	}
 }
@@ -900,14 +1070,13 @@ generic_cv_naval_bomber = {
 	category = air
 
 	#blocked_for = {  ENG USA FRA JAP }
-	blocked_for = { ENG }
+	#blocked_for = { ENG }
 
 	available_for = {}
 
 	roles = {
 		air_cv_naval_bomber
 	}
-
 	priority = {
 		factor = 500
 		modifier = {
@@ -918,80 +1087,148 @@ generic_cv_naval_bomber = {
 			factor = 0
 		}
 	}
+	
 	cv_naval_bomber_1 = {
 		priority = {
 			factor = 100
-			
-		}
-
-		target_variant = {
-			match_value = 1000
-			type = cv_small_plane_naval_bomber_airframe_1
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = empty
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
+			modifier = { 
+				has_tech = cv_naval_bomber2
+				factor = 0 #let's not waste XP here
 			}
 		}
-
-		allowed_modules = {
-			torpedo_mounting
-			engine_2_1x
+		target_variant = {
+			match_value = 1000
+			type = cv_nav_bomber_equipment_1
 		}
 	}
+	cv_naval_bomber_1_better = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = cv_naval_bomber2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1100
+			type = cv_nav_bomber_equipment_1
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	cv_naval_bomber_1_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = cv_naval_bomber2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1200
+			type = cv_nav_bomber_equipment_1
+			upgrades = {
+				cv_plane_naval_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 2
+			}
+		}
+	}
+	
 	cv_naval_bomber_2 = {
 		priority = {
 			factor = 200
-			
+			modifier = { 
+				has_tech = cv_naval_bomber3
+				factor = 0 #let's not waste XP here
+			}
 		}
-
 		target_variant = {
 			match_value = 1500
-			type = cv_small_plane_naval_bomber_airframe_2
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = bomb_locks
-				engine_type_slot = engine_3_1x
-				special_type_slot_1 = lmg_defense_turret
-				special_type_slot_2 = empty	
-			}
-
+			type = cv_nav_bomber_equipment_2
 		}
-
-		allowed_modules = {
-			torpedo_mounting
-			bomb_locks
-			engine_3_1x
-			lmg_defense_turret
+	}
+	cv_naval_bomber_2_better = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = cv_naval_bomber3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1600
+			type = cv_nav_bomber_equipment_2
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	cv_naval_bomber_2_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = cv_naval_bomber3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1700
+			type = cv_nav_bomber_equipment_2
+			upgrades = {
+				cv_plane_naval_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 2
+			}
 		}
 	}
 
 	cv_naval_bomber_3 = {
 		priority = {
 			factor = 200
-			
 		}
-
 		target_variant = {
 			match_value = 2000
-			type = cv_small_plane_naval_bomber_airframe_3
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = bomb_locks
-				engine_type_slot = engine_3_1x
-				special_type_slot_1 = lmg_defense_turret
-				special_type_slot_2 = empty	
-			}
-
+			type = cv_nav_bomber_equipment_3
 		}
-
-		allowed_modules = {
-			torpedo_mounting
-			bomb_locks
-			engine_3_1x
-			lmg_defense_turret
+	}
+	cv_naval_bomber_3_better = {
+		priority = {
+			factor = 200
+		}
+		target_variant = {
+			match_value = 2100
+			type = cv_nav_bomber_equipment_3
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	cv_naval_bomber_3_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 200
+		}
+		target_variant = {
+			match_value = 2200
+			type = cv_nav_bomber_equipment_3
+			upgrades = {
+				cv_plane_naval_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 2
+			}
 		}
 	}
 }
@@ -1001,7 +1238,7 @@ generic_cv_naval_bomber = {
 generic_tactical_bomber = {
 	category = air
 
-	blocked_for = {GER ENG USA}
+	#blocked_for = {GER ENG USA}
 
 	available_for = {}
 
@@ -1025,135 +1262,266 @@ generic_tactical_bomber = {
 		priority = {
 			factor = 100
 			modifier = { 
-				has_tech = basic_medium_airframe
+				has_tech = tactical_bomber1
 				factor = 0 #let's not waste XP here
 			}
 		}
-
 		target_variant = {
 			match_value = 2000
-			type = medium_plane_airframe_0
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = empty
-				engine_type_slot = engine_1_2x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
-			}
-			
-		}
-
-		allowed_modules = {
-			medium_bomb_bay
-			engine_1_2x
-			
+			type = tac_bomber_equipment_0
 		}
 	}
 
 	tac_bomber_1_default = {
 		priority = {
 			factor = 100
-	
+			modifier = { 
+				has_tech = tactical_bomber2
+				factor = 0 #let's not waste XP here
+			}
 		}
-
 		target_variant = {
 			match_value = 3000
-			type = medium_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-				engine_type_slot = engine_2_2x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
-			}
-			
-		}
-
-		allowed_modules = {
-			medium_bomb_bay
-			engine_2_2x
+			type = tac_bomber_equipment_1
 		}
 	}
+	tac_bomber_1_better = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = tactical_bomber2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 3100
+			type = tac_bomber_equipment_1
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	tac_bomber_1_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = tactical_bomber2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 3200
+			type = tac_bomber_equipment_1
+			upgrades = {
+				plane_tac_bomb_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 2
+				plane_reliability_upgrade = 3
+			}
+		}
+	}
+	
 	tac_bomber_2_default = {
 		priority = {
 			factor = 100
-	
-		}
-
-		target_variant = {
-			match_value = 3000
-			type = medium_plane_airframe_2
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_2 = bomb_locks
-				engine_type_slot = engine_3_2x
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = empty	
+			modifier = { 
+				has_tech = tactical_bomber3
+				factor = 0 #let's not waste XP here
 			}
-			
 		}
-
-		allowed_modules = {
-			medium_bomb_bay
-			bomb_locks
-			engine_3_2x
-			lmg_defense_turret_2x
+		target_variant = {
+			match_value = 3500
+			type = tac_bomber_equipment_2
+		}
+	}
+	tac_bomber_2_better = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = tactical_bomber3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 3600
+			type = tac_bomber_equipment_2
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	tac_bomber_2_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = tactical_bomber3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 3700
+			type = tac_bomber_equipment_2
+			upgrades = {
+				plane_tac_bomb_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 2
+				plane_reliability_upgrade = 3
+			}
 		}
 	}
 
 	tac_bomber_3_default = {
 		priority = {
 			factor = 100
+			modifier = { 
+				has_tech = jet_tactical_bomber1
+				factor = 0 #let's not waste XP here
+			}
 		}
-
 		target_variant = {
 			match_value = 4000
-			type = medium_plane_airframe_3
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_2 = bomb_locks
-				fixed_auxiliary_weapon_slot_3 = torpedo_mounting
-				engine_type_slot = engine_4_2x
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = empty	
-			}
-			
-		}
-
-		allowed_modules = {
-			medium_bomb_bay
-			bomb_locks
-			torpedo_mounting
-			engine_4_2x
-			lmg_defense_turret_2x
+			type = tac_bomber_equipment_3
 		}
 	}
+	tac_bomber_3_better = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = jet_tactical_bomber1
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 4100
+			type = tac_bomber_equipment_3
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	tac_bomber_3_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = jet_tactical_bomber1
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 4200
+			type = tac_bomber_equipment_3
+			upgrades = {
+				plane_tac_bomb_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 2
+				plane_reliability_upgrade = 3
+			}
+		}
+	}
+	
 	jet_tac_bomber_default = {
 		priority = {
 			factor = 100
-		}
-
-		target_variant = {
-			match_value = 4000
-			type = medium_plane_airframe_4
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_2 = bomb_locks
-				engine_type_slot = jet_engine_2x
-				special_type_slot_1 = fuel_tanks_medium
-				special_type_slot_2 = empty	
+			modifier = { 
+				has_tech = jet_tactical_bomber2
+				factor = 0 #let's not waste XP here
 			}
-			
 		}
-
-		allowed_modules = {
-			medium_bomb_bay
-			bomb_locks
-			fuel_tanks_medium
-			jet_engine_2x
+		target_variant = {
+			match_value = 4500
+			type = jet_tac_bomber_equipment_1
+		}
+	}
+	jet_tac_bomber_better = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = jet_tactical_bomber2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 4600
+			type = jet_tac_bomber_equipment_1
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	jet_tac_bomber_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = jet_tactical_bomber2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 4700
+			type = jet_tac_bomber_equipment_1
+			upgrades = {
+				plane_tac_bomb_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 2
+				plane_reliability_upgrade = 3
+			}
+		}
+	}
+	
+	jet_tac_bomber_2_default = {
+		priority = {
+			factor = 100
+		}
+		target_variant = {
+			match_value = 5000
+			type = jet_tac_bomber_equipment_2
+		}
+	}
+	jet_tac_bomber_2_better = {
+		priority = {
+			factor = 100
+		}
+		target_variant = {
+			match_value = 5100
+			type = jet_tac_bomber_equipment_2
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	jet_tac_bomber_2_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 100
+		}
+		target_variant = {
+			match_value = 5200
+			type = jet_tac_bomber_equipment_2
+			upgrades = {
+				plane_tac_bomb_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 2
+				plane_reliability_upgrade = 3
+			}
 		}
 	}
 }
@@ -1168,91 +1536,166 @@ generic_heavy_fighter = {
 	roles = {
 		air_heavy_fighter
 	}
-
 	priority = {
 		factor = 500
 		
+		modifier = {
+			tag = GER
+			has_war_with = ENG
+			NOT = { has_war_with = SOV }
+			factor = 2
+		}
+		
+		modifier = {
+			tag = USA
+			factor = 0.02
+		}
 	}
+	
 	heavy_fighter_1 = {
 		priority = {
 			factor = 100
-			
+			modifier = { 
+				has_tech = heavy_fighter2
+				factor = 0 #let's not waste XP here
+			}
 		}
-		
-
 		target_variant = {
 			match_value = 1000
-			type = medium_plane_fighter_airframe_1
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_2_2x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
-			}
-			
+			type = heavy_fighter_equipment_1
 		}
-
-		allowed_modules = {
-			light_mg_4x
-			aircraft_cannon_1_2x
-			engine_2_2x
+	}
+	heavy_fighter_1_better = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = heavy_fighter2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1100
+			type = heavy_fighter_equipment_1
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	heavy_fighter_1_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = heavy_fighter2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1200
+			type = heavy_fighter_equipment_1
+			upgrades = {
+				plane_gun_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 2
+				plane_reliability_upgrade = 3
+			}
 		}
 	}
 
 	heavy_fighter_2 = {
 		priority = {
 			factor = 200
-			
+			modifier = { 
+				has_tech = heavy_fighter3
+				factor = 0 #let's not waste XP here
+			}
 		}
-		
-
 		target_variant = {
 			match_value = 1500
-			type = medium_plane_fighter_airframe_2
-			modules = {
-				fixed_main_weapon_slot = heavy_mg_4x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_3_2x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
-			}
-			
+			type = heavy_fighter_equipment_2
 		}
-
-		allowed_modules = {
-			heavy_mg_4x
-			aircraft_cannon_1_2x
-			engine_3_2x
+	}
+	heavy_fighter_2_better = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = heavy_fighter3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1700
+			type = heavy_fighter_equipment_2
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	heavy_fighter_2_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = heavy_fighter3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1800
+			type = heavy_fighter_equipment_2
+			upgrades = {
+				plane_gun_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 2
+				plane_reliability_upgrade = 3
+			}
 		}
 	}
 
 	heavy_fighter_3 = {
 		priority = {
 			factor = 200
-			
 		}
-
 		target_variant = {
 			match_value = 2000
-			type = medium_plane_fighter_airframe_3
-			modules = {
-				fixed_main_weapon_slot = heavy_mg_4x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_4_2x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
-			}
-			
+			type = heavy_fighter_equipment_3
 		}
-
-		allowed_modules = {
-			heavy_mg_4x
-			aircraft_cannon_2_2x
-			engine_4_2x
+	}
+	heavy_fighter_3_better = {
+		priority = {
+			factor = 200
+		}
+		target_variant = {
+			match_value = 2100
+			type = heavy_fighter_equipment_3
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	heavy_fighter_3_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 200
+		}
+		target_variant = {
+			match_value = 2200
+			type = heavy_fighter_equipment_3
+			upgrades = {
+				plane_gun_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 2
+				plane_reliability_upgrade = 3
+			}
 		}
 	}
 }
@@ -1279,90 +1722,56 @@ generic_scout_plane = {
 		priority = {
 			factor = 10
 		}
-
 		target_variant = {
 			match_value = 1000
-			type = medium_plane_scout_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = recon_camera
-				fixed_auxiliary_weapon_slot_1 = empty
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_1_2x
-				special_type_slot_1 = fuel_tanks_medium
-				special_type_slot_2 = empty
-				special_type_slot_3 = empty
-			}
-			
-		}
-
-		allowed_modules = {
-			recon_camera
-			engine_1_2x
-			fuel_tanks_medium
+			type = scout_plane_equipment_1
 		}
 	}
 
 	scout_plane_2_default = {
 		priority = {
 			factor = 10
-			
 		}
-
 		target_variant = {
 			match_value = 2000
-			type = medium_plane_scout_plane_airframe_2
-			modules = {
-				fixed_main_weapon_slot = recon_camera
-				fixed_auxiliary_weapon_slot_1 = empty
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_2_2x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty
-				special_type_slot_3 = fuel_tanks_medium
-				special_type_slot_4 = empty
-			}
-			
-		}
-
-		allowed_modules = {
-			engine_2_4x
-			recon_camera
-			fuel_tanks_medium
+			type = scout_plane_equipment_2
 		}
 	}
+	
+	#no third simple scout plane
+	
+	# scout_plane_3_default = {
+		# priority = {
+			# factor = 10
+		# }
 
-	scout_plane_3_default = {
-		priority = {
-			factor = 10
-		}
+		# target_variant = {
+			# match_value = 4000
+			# type = medium_plane_scout_plane_airframe_3
+			# modules = {
+				# fixed_main_weapon_slot = recon_camera
+				# fixed_auxiliary_weapon_slot_1 = empty
+				# fixed_auxiliary_weapon_slot_2 = empty
+				# engine_type_slot = engine_4_2x
+				# special_type_slot_1 = empty
+				# special_type_slot_2 = empty
+				# special_type_slot_3 = fuel_tanks_medium
+				# special_type_slot_4 = fuel_tanks_medium
+			# }
+		# }
 
-		target_variant = {
-			match_value = 4000
-			type = medium_plane_scout_plane_airframe_3
-			modules = {
-				fixed_main_weapon_slot = recon_camera
-				fixed_auxiliary_weapon_slot_1 = empty
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_4_2x
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty
-				special_type_slot_3 = fuel_tanks_medium
-				special_type_slot_4 = fuel_tanks_medium
-			}
-		}
-
-		allowed_modules = {
-			engine_4_2x
-			fuel_tanks_medium
-			recon_camera
-		}
-	}
+		# allowed_modules = {
+			# engine_4_2x
+			# fuel_tanks_medium
+			# recon_camera
+		# }
+	# }
 }
 
 generic_strategic_bomber = {
 	category = air
 
-	blocked_for = {GER ENG USA SOV}
+	#blocked_for = {GER ENG USA SOV}
 
 	available_for = {}
 
@@ -1376,87 +1785,151 @@ generic_strategic_bomber = {
 			num_of_factories < 50
 			factor = 0
 		}
-	}
-
-	strat_bomber_0_default = {
-		priority = {
-			factor = 5
+		
+		modifier = {
+			tag = GER
+			num_of_factories < 100
+			factor = 0
 		}
-
-		target_variant = {
-			match_value = 500
-			type = large_plane_airframe_0
-			modules = {
-				fixed_main_weapon_slot = large_bomb_bay
-				engine_type_slot = engine_1_4x
-				special_type_slot_1 = {
-					any_of = {
-						lmg_defense_turret
-						lmg_defense_turret_2x
-					}
+		modifier = { #beat the Soviets already
+			tag = GER
+			has_War = yes
+			SOV = {
+				OR = {
+					exists = no
+					is_subject_of = GER
 				}
 			}
+			factor = 4
 		}
-
-		allowed_modules = {
-			large_bomb_bay
-			engine_1_4x
-			lmg_defense_turret_2x
-			lmg_defense_turret
+		
+		modifier = {
+			tag = USA
+			date > "1940.1.1"
+			factor = 5
+		}
+		modifier = {
+			tag = USA
+			has_war = yes
+			factor = 4
 		}
 	}
+
+	#no simple strategic bomber 0
+
+	# strat_bomber_0_default = {
+		# priority = {
+			# factor = 5
+		# }
+		# target_variant = {
+			# match_value = 500
+			# type = large_plane_airframe_0
+		# }
+	# }
 
 	strat_bomber_1_default = {
 		priority = {
 			factor = 10
+			modifier = { 
+				has_tech = strategic_bomber2
+				factor = 0 #let's not waste XP here
+			}
 		}
-
 		target_variant = {
 			match_value = 1000
-			type = large_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = large_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = empty
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_2_4x
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = lmg_defense_turret
-			}
-			
+			type = strat_bomber_equipment_1
 		}
-
-		allowed_modules = {
-			large_bomb_bay
-			engine_2_4x
-			lmg_defense_turret_2x
-			lmg_defense_turret
+	}
+	strat_bomber_1_better = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = strategic_bomber2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1100
+			type = strat_bomber_equipment_1
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	strat_bomber_1_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = strategic_bomber2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1200
+			type = strat_bomber_equipment_1
+			upgrades = {
+				plane_bomb_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 3
+			}
 		}
 	}
 
 	strat_bomber_2_default = {
 		priority = {
 			factor = 10
+			modifier = { 
+				has_tech = strategic_bomber3
+				factor = 0 #let's not waste XP here
+			}
 		}
-
 		target_variant = {
 			match_value = 2000
-			type = large_plane_airframe_2
-			modules = {
-				fixed_main_weapon_slot = large_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_3_4x
-				special_type_slot_1 = hmg_defense_turret_2x
-				special_type_slot_2 = lmg_defense_turret_2x
-			}
-			
+			type = strat_bomber_equipment_2
 		}
-
-		allowed_modules = {
-			large_bomb_bay
-			engine_3_4x
-			hmg_defense_turret_2x
-			lmg_defense_turret_2x
+	}
+	strat_bomber_2_better = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = strategic_bomber3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 2100
+			type = strat_bomber_equipment_2
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
+			}
+		}
+	}
+	strat_bomber_2_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = strategic_bomber3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 2200
+			type = strat_bomber_equipment_2
+			upgrades = {
+				plane_bomb_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 3
+			}
 		}
 	}
 
@@ -1464,155 +1937,170 @@ generic_strategic_bomber = {
 		priority = {
 			factor = 10
 		}
-
 		target_variant = {
 			match_value = 4000
-			type = large_plane_airframe_3
-			modules = {
-				fixed_main_weapon_slot = large_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
-				fixed_auxiliary_weapon_slot_2 = large_bomb_bay
-				engine_type_slot = engine_4_4x
-				special_type_slot_1 = cannon_defense_turret_2x
-				special_type_slot_2 = hmg_defense_turret_2x
-				special_type_slot_3 = empty
+			type = strat_bomber_equipment_3
+		}
+	}
+	strat_bomber_3_better = {
+		priority = {
+			factor = 10
+		}
+		target_variant = {
+			match_value = 4100
+			type = strat_bomber_equipment_3
+			upgrades = {
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 1
 			}
 		}
-
-		allowed_modules = {
-			large_bomb_bay
-			engine_4_4x
-			cannon_defense_turret_2x
-			hmg_defense_turret_2x
+	}
+	strat_bomber_3_best = {
+		enable = {
+			is_major = yes
+		}
+		priority = {
+			factor = 10
+		}
+		target_variant = {
+			match_value = 4200
+			type = strat_bomber_equipment_3
+			upgrades = {
+				plane_bomb_upgrade = 1
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 1
+				plane_reliability_upgrade = 3
+			}
 		}
 	}
 }
 
-generic_maritime_patrol = {
-	category = air
+#no simple maritime patrol
 
-	blocked_for = {GER ENG USA}
+# generic_maritime_patrol = {
+	# category = air
 
-	available_for = {}
+	# blocked_for = {GER ENG USA}
 
-	roles = {
-		air_maritime_patrol
-	}
+	# available_for = {}
 
-	priority = {
-		factor = 200
-		modifier = {
-			num_of_factories < 50
-			factor = 0
-		}
-		modifier = {
-			all_owned_state = {
-				is_coastal = no
-			}
-			factor = 0
-		}
-	}
+	# roles = {
+		# air_maritime_patrol
+	# }
 
-	maritime_patrol_1_default = {
-		priority = {
-			factor = 10
-		}
+	# priority = {
+		# factor = 200
+		# modifier = {
+			# num_of_factories < 50
+			# factor = 0
+		# }
+		# modifier = {
+			# all_owned_state = {
+				# is_coastal = no
+			# }
+			# factor = 0
+		# }
+	# }
 
-		target_variant = {
-			match_value = 1000
-			type = large_plane_maritime_patrol_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = empty
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_1_4x
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = fuel_tanks_large
-				special_type_slot_3 = flying_boat_large
-			}
+	# maritime_patrol_1_default = {
+		# priority = {
+			# factor = 10
+		# }
+
+		# target_variant = {
+			# match_value = 1000
+			# type = large_plane_maritime_patrol_plane_airframe_1
+			# modules = {
+				# fixed_main_weapon_slot = torpedo_mounting
+				# fixed_auxiliary_weapon_slot_1 = empty
+				# fixed_auxiliary_weapon_slot_2 = empty
+				# engine_type_slot = engine_1_4x
+				# special_type_slot_1 = lmg_defense_turret_2x
+				# special_type_slot_2 = fuel_tanks_large
+				# special_type_slot_3 = flying_boat_large
+			# }
 			
-		}
+		# }
 
-		allowed_modules = {
-			torpedo_mounting
-			engine_1_4x
-			fuel_tanks_large
-			flying_boat_large
-			lmg_defense_turret
-		}
-	}
+		# allowed_modules = {
+			# torpedo_mounting
+			# engine_1_4x
+			# fuel_tanks_large
+			# flying_boat_large
+			# lmg_defense_turret
+		# }
+	# }
 
-	maritime_patrol_2_default = {
-		priority = {
-			factor = 10
+	# maritime_patrol_2_default = {
+		# priority = {
+			# factor = 10
 			
-		}
+		# }
 
-		target_variant = {
-			match_value = 2000
-			type = large_plane_maritime_patrol_plane_airframe_2
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_2_4x
-				special_type_slot_1 = hmg_defense_turret_2x
-				special_type_slot_2 = lmg_defense_turret_2x
-				special_type_slot_3 = fuel_tanks_large
-				special_type_slot_4 = flying_boat_large
-			}
+		# target_variant = {
+			# match_value = 2000
+			# type = large_plane_maritime_patrol_plane_airframe_2
+			# modules = {
+				# fixed_main_weapon_slot = torpedo_mounting
+				# fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+				# fixed_auxiliary_weapon_slot_2 = empty
+				# engine_type_slot = engine_2_4x
+				# special_type_slot_1 = hmg_defense_turret_2x
+				# special_type_slot_2 = lmg_defense_turret_2x
+				# special_type_slot_3 = fuel_tanks_large
+				# special_type_slot_4 = flying_boat_large
+			# }
 			
-		}
+		# }
 
-		allowed_modules = {
-			torpedo_mounting
-			engine_2_4x
-			hmg_defense_turret_2x
-			lmg_defense_turret_2x
-			fuel_tanks_large
-			flying_boat_large
-		}
-	}
+		# allowed_modules = {
+			# torpedo_mounting
+			# engine_2_4x
+			# hmg_defense_turret_2x
+			# lmg_defense_turret_2x
+			# fuel_tanks_large
+			# flying_boat_large
+		# }
+	# }
 
-	maritime_patrol_3_default = {
-		priority = {
-			factor = 10
-		}
+	# maritime_patrol_3_default = {
+		# priority = {
+			# factor = 10
+		# }
 
-		target_variant = {
-			match_value = 4000
-			type = large_plane_maritime_patrol_plane_airframe_3
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
-				engine_type_slot = engine_4_4x
-				special_type_slot_1 = cannon_defense_turret_2x
-				special_type_slot_2 = { 
-					any_of = {
-						air_ground_radar_2
-						air_ground_radar_1
-						recon_camera
-						hmg_defense_turret_2x 
-					}
-				}
-				special_type_slot_3 = fuel_tanks_large
-				special_type_slot_4 = flying_boat_large
-			}
+		# target_variant = {
+			# match_value = 4000
+			# type = large_plane_maritime_patrol_plane_airframe_3
+			# modules = {
+				# fixed_main_weapon_slot = torpedo_mounting
+				# fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+				# fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+				# engine_type_slot = engine_4_4x
+				# special_type_slot_1 = cannon_defense_turret_2x
+				# special_type_slot_2 = { 
+					# any_of = {
+						# air_ground_radar_2
+						# air_ground_radar_1
+						# recon_camera
+						# hmg_defense_turret_2x 
+					# }
+				# }
+				# special_type_slot_3 = fuel_tanks_large
+				# special_type_slot_4 = flying_boat_large
+			# }
 			
-		}
+		# }
 
-		allowed_modules = {
-			torpedo_mounting
-			engine_4_4x
-			cannon_defense_turret_2x
-			hmg_defense_turret_2x
-			air_ground_radar_2
-			air_ground_radar_1
-			recon_camera
-			fuel_tanks_large
-			flying_boat_large
-		}
-	}
-}
-
+		# allowed_modules = {
+			# torpedo_mounting
+			# engine_4_4x
+			# cannon_defense_turret_2x
+			# hmg_defense_turret_2x
+			# air_ground_radar_2
+			# air_ground_radar_1
+			# recon_camera
+			# fuel_tanks_large
+			# flying_boat_large
+		# }
+	# }
+# }

@@ -166,6 +166,35 @@ on_actions = {
 						strategic_bomber3 = 1
 					}
 				}
+				
+				#transports
+				if = {
+					limit = {
+						has_tech = bba_early_transport_plane
+					}
+					set_technology = {
+						popup = no
+						early_transport_plane = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = bba_improved_transport_plane
+					}
+					set_technology = {
+						popup = no
+						improved_transport_plane = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = bba_strategic_airlifter
+					}
+					set_technology = {
+						popup = no
+						strategic_airlifter = 1
+					}
+				}
 			}
 			
 			#equipment variants

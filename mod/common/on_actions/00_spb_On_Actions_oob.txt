@@ -1,0 +1,322 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = { has_start_date < 1938.1.2 }
+				
+				ARG = {
+					load_oob = "ARG_1936_air_legacy"
+				}
+				
+				AST = {
+					set_technology = {
+						popup = no
+						CAS1 = 1
+					}
+					load_oob = "AST_1936_air_legacy"
+				}
+				
+				AUS = {
+					load_oob = "AUS_1936_air_legacy"
+				}
+				
+				BEL = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+					load_oob = "BEL_1936_air_legacy"
+				}
+				
+				BOL = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+					load_oob = "Bol_1936_air_legacy"
+				}
+				
+				BRA = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+					load_oob = "BRA_1936_air_legacy"
+				}
+				
+				BUL = {
+					load_oob = "BUL_1936_air_legacy"
+				}
+				
+				CAN = {
+					set_technology = {
+						popup = no
+						naval_bomber1 = 1
+					}
+					load_oob = "CAN_1936_air_legacy"
+				}
+				
+				CHI = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+						early_bomber = 1
+					}
+					load_oob = "CHI_1936_air_legacy"
+				}
+				
+				CHL = {
+					load_oob = "CHL_1936_air_legacy"
+				}
+				
+				COL = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+					load_oob = "COL_1936_air_legacy"
+				}
+				
+				CZE = {
+					load_oob = "CZE_1936_air_legacy"
+				}
+				
+				DEN = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+					load_oob = "DEN_1936_air_legacy"
+				}
+				
+				ENG = {
+					load_oob = "ENG_1936_air_legacy"
+				}
+				
+				EST = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+					load_oob = "EST_1936_air_legacy"
+				}
+				
+				FRA = {
+					set_technology = {
+						popup = no
+						tactical_bomber1 = 1
+					}
+					load_oob = "FRA_1936_air_legacy"
+				}
+				
+				GER = {
+					load_oob = "GER_1936_air_legacy"
+				}
+				
+				GRE = {
+					load_oob = "GRE_1936_air_legacy"
+				}
+				
+				HOL = {
+					load_oob = "HOL_1936_air_legacy"
+				}
+				
+				HUN = {
+					load_oob = "HUN_1936_air_legacy"
+				}
+				
+				IRQ = {
+					set_technology = {
+						popup = no
+						CAS1 = 1
+					}
+					load_oob = "IRQ_1936_air_legacy"
+				}
+				
+				ITA = {
+					load_oob = "ITA_1936_air_legacy"
+				}
+				
+				JAP = {
+					set_technology = {
+						popup = no
+						cv_CAS1 = 1
+					}
+					load_oob = "JAP_1936_air_legacy"
+				}
+				
+				LAT = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+					load_oob = "LAT_1936_air_legacy"
+				}
+				
+				LIT = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+					load_oob = "LIT_1936_air_legacy"
+				}
+				
+				MEX = {
+					set_technology = {
+						popup = no
+						early_bomber = 1
+					}
+					load_oob = "MEX_1936_air_legacy"
+				}
+				
+				NOR = {
+					set_technology = {
+						popup = no
+						early_bomber = 1
+					}
+					load_oob = "NOR_1936_air_legacy"
+				}
+				
+				NZL = {
+					set_technology = {
+						popup = no
+						naval_bomber1 = 1
+					}
+					load_oob = "NZL_1936_air_legacy"
+				}
+				
+				PAR = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+					load_oob = "PAR_1936_air_legacy"
+				}
+				
+				PER = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+						CAS1 = 1
+					}
+					load_oob = "PER_1936_air_legacy"
+				}
+				
+				PHI = {
+					load_oob = "POL_1936_air_legacy"
+				}
+				
+				POR = {
+					set_technology = {
+						popup = no
+						early_bomber = 1
+						CAS1 = 1
+					}
+					load_oob = "POR_1936_air_legacy"
+				}
+				
+				PRU = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+						CAS1 = 1
+					}
+					load_oob = "PRU_1936_air_legacy"
+				}
+				
+				RAJ = {
+					set_technology = {
+						popup = no
+						CAS1 = 1
+					}
+					load_oob = "RAJ_1936_air_legacy"
+				}
+				
+				ROM = {
+					load_oob = "ROM_1936_air_legacy"
+				}
+				
+				SAF = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+					}
+					load_oob = "SAF_1936_air_legacy"
+				}
+				
+				SIA = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+						CAS1 = 1
+					}
+					load_oob = "SIA_1936_air_legacy"
+				}
+				
+				SOV = {
+					load_oob = "SOV_1936_air_legacy"
+				}
+				
+				SPR = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+						naval_bomber1 = 1
+					}
+					load_oob = "SPR_1936_air_legacy"
+				}
+				
+				SWE = {
+					set_technology = {
+						popup = no
+						CAS1 = 1
+						cv_naval_bomber1 = 1
+					}
+					load_oob = "SWE_1936_air_legacy"
+				}
+				
+				SWI = {
+					load_oob = "SWI_1936_air_legacy"
+				}
+				
+				TUR = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+						CAS1 = 1
+					}
+					load_oob = "TUR_1936_air_legacy"
+				}
+				
+				USA = {
+					set_technology = {
+						popup = no
+						cv_CAS1 = 1
+					}
+					load_oob = "USA_1936_air_legacy"
+				}
+				
+				YUG = {
+					load_oob = "YUG_1936_air_legacy"
+				}
+			}
+			
+			if = {
+				limit = { has_start_date > 1938.1.1 }
+				
+				BEL = {
+					set_technology = {
+						popup = no
+						early_fighter = 1
+						fighter1 = 1
+					}
+					load_oob = "BEL_1939_air_legacy"
+				}
+				
+				HOL = {
+					load_oob = "HOL_1939_air_legacy"
+				}
+			}
+		}
+	}
+}
